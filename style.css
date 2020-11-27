@@ -1,0 +1,316 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: #2a2c2f;
+  color: #ffffff;
+}
+
+.main-main__body {
+  background-image: url(./images/beautiful-clouds-cloudy-dramatic-209831.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  padding-bottom: 75px;
+}
+
+.main-main {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.main-page {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 50px;
+}
+
+.img-hover-zoom {
+  height: 400px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  border-radius: 5px;
+}
+
+/* [2] Transition property for smooth transformation of images */
+.selfie__img {
+  width: 100%;
+  height: 400px;
+  transition: transform 0.5s, filter 1.5s ease-in-out;
+  object-fit: cover;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.selfie__img:hover {
+  transform: scale(1.2);
+}
+
+.main-main__title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.main-main__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__list {
+  list-style: none;
+}
+
+.intro__list-link {
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+  color: #ffffff;
+}
+
+.intro__list-link:hover {
+  opacity: 0.8;
+}
+
+.intro__list-link_active {
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.intro__list-link_active:hover {
+  opacity: 0.5;
+}
+
+.first-page__header {
+  background-image: url(./images/bg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  padding: 74px 0;
+}
+
+.first-main-text {
+  font-size: 24px;
+}
+
+.grid-2-page {
+  margin: 0 auto;
+  padding: 0 0 70px;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 35px;
+}
+
+.mails {
+  max-height: 480px;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 15px;
+  background-color: rgba(20, 20, 20, 0.5);
+}
+
+.img-mail {
+  margin: 50px auto;
+  width: 100%;
+}
+
+.dates-mail {
+  font-size: 28px;
+  color: #face20;
+}
+
+.header-first {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  text-align: center;
+  color: rgb(229, 255, 0);
+}
+
+.first-main-text {
+  font-size: 24px;
+}
+
+.main-forfirst {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  height: 100vh;
+}
+
+.firstpage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/main1stBack.jpg);
+  z-index: 2;
+  padding-bottom: 300px;
+}
+
+.third__page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/рекаурал.jpg);
+  z-index: 2;
+  padding-bottom: 100px;
+}
+
+.firstpage__overlay {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+  z-index: -1;
+}
+
+.sholohov-citata-block {
+  padding-right: 80px;
+  padding-top: 40px;
+}
+
+.sholohov-citata {
+  text-align: right;
+  font-size: 28px;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+}
+
+.sholohov-textVideo-block {
+  width: 100%;
+  height: calc(100% - (163px + 111px));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sholohov-text {
+  max-width: 600px;
+  font-size: 28px;
+  padding: 0;
+  margin: -80px 0 0 80px;
+}
+
+.sholohov-video {
+  position: fixed;
+  width: 640px;
+  border: 0;
+  border-radius: 5px;
+  height: 360px;
+  /* z-index: 100; */
+  margin: -60px 80px 0 0;
+  right: 0;
+}
+
+.logo_nis_eki {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+.grid-container-3 {
+  margin: 75px 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr min-content;
+  gap: 35px;
+}
+
+/* fourth */
+.fourth-textImg-block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 50px 0 0;
+  padding: 0;
+}
+
+.fourth-text {
+  max-width: 1024px;
+  font-size: 24px;
+}
+
+.fourth-Img-block {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fourth-img {
+  width: auto;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.fourth-img-text {
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.forth-page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/bg-4.jpg);
+  z-index: 2;
+  padding-bottom: 100px;
+}
+/* fourth */
+
+.fifth-page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/5bg.jpg);
+  z-index: 2;
+  padding-bottom: 100px;
+}
+
+.fifth__photos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
